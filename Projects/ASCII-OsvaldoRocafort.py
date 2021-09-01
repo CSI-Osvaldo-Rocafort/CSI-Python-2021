@@ -1,0 +1,7 @@
+print ("  OOOOO    SSSSS")
+print (" O     O   S")
+print (" O     O   S")
+print (" O     O   S")
+print (" O     O   SSSS")
+print (" O     O      S")
+print ("  OOOOO   SSSSS")
