@@ -96,28 +96,29 @@ print(type(age))
 
 What is the difference between "42" and 42.
 
- - Answer:
+ - Answer: 42 is a integer and "42" is string.
 
 Define the boolean operators: >, <, ==, >=, <=
 
- - Answer:
+ - Answer: Greater, Less than, equal, greter than or equal to, less than or equal to
 
 How do you address an index in an list? Write a python code that assigns 34 to a new variable by accessing the value stored in:  
         arr = [4, 3, -1, 4, 34]
 
- - Answer:
+ - Answer: -1<3    4<34      4<3
+           true     true     false
 
 What is the first index of a list? Why?
 
- - Answer:
+ - Answer: The first index is 0 because that is how you start in every list online.
 
 Provide an original example of a null value. It must prove your understanding of the concept.
 
- - Answer:
+ - Answer: An example of null value is when you put a bottle in outer space and there is no water but only air in the bottle.
 
 Type down any class notes below this sentence:
 
-
+Every list starts with 0 instead of 1
 
 Lackluster responses may result in point deductions.
 -->
