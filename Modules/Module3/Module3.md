@@ -114,7 +114,7 @@ What is the first index of a list? Why?
 
 Provide an original example of a null value. It must prove your understanding of the concept.
 
- - Answer: An example of null value is when you put a bottle in outer space and there is no water but only air in the bottle.
+ - Answer: An example of null value is when you put a bottle in outer space and there is no water but only air in the bottle. The xample says that there is nothing left in the bottle which there is supposed to be water in it.
 
 Type down any class notes below this sentence:
 
