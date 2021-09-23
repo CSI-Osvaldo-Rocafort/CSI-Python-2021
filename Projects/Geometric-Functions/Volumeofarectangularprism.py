@@ -6,7 +6,7 @@ def volume(length:float, width:float, height:float):
 
 # Format a value using 2 decimal places and scientific notation. 
 # Print a verbal representation with units.
-def printVolumeScientific(length:float, unit:str):
+def printVolumeScientific(volume:float, unit:str):
     print(f"volume in scientific notation is: {volume: .2e} {unit}.")
 
     # Add a header to your execution. It includes 2 newline characters '\n'
