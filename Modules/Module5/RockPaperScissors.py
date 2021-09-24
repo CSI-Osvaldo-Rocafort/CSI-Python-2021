@@ -17,3 +17,14 @@ else:
 foo = ['rock', 'paper', 'scissors']
 computerChoice = random.choice(foo)
 print(f"Computer selected: {computerChoice}")
+
+if(computerChoice == Osvaldochoice):
+     print("tied")
+elif(computerChoice == "scissors" and Osvaldochoice == "rock"):
+     print("Iwin")
+elif(computerChoice == "paper" and Osvaldochoice == "rock"):
+     print("computerwon")
+elif(computerChoice == "rock" and Osvaldochoice == "paper"):
+    print("Iwin")
+elif(computerChoice == "paper" and Osvaldochoice == "scissors"):
+    print("Iwin")
