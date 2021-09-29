@@ -13,8 +13,8 @@ def printVolumeScientific(volume:float, unit:str):
 print("\nCalculating various volumes: \n")
 
 printVolumeScientific(volume(200, 55.0, 73.15), "cm^3")
-printVolumeScientific(volume(65.0, 2, 13), "cm^3")
-printVolumeScientific(volume(3.27E4, 190, 56), "cm^3")
-printVolumeScientific(volume(1.47E-8, 0.01, 34), "cm^3")
+printVolumeScientific(volume(65.0, 2, 13), "mm")
+printVolumeScientific(volume(3.27E4, 190, 56), "ml")
+printVolumeScientific(volume(1.47E-8, 0.01, 34), "mm^2")
 
 
