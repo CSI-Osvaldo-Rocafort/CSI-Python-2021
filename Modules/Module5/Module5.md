@@ -70,10 +70,10 @@ print(f"Computer selected: {computerChoice}")
 
 Give a python example for each logic operator in the module image.
 
- - Answers:
-   - OR:
-   - AND: 
-   - NOT: 
+ - Answers: x=63 y=3
+   - OR:if(x mayor que 0 (or) y menor que 0)
+   - AND:if(x es menor que 0 (and) y menor que 0)
+   - NOT: if(x menor que 0 (not) y menor que 0)
 
 
 Type down any class notes below this sentence:
