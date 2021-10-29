@@ -44,18 +44,28 @@ mydata = ExperimentData
 # }
 print(ExperimentData["Gunname", "7.62k51mm NATO", "7.62x51mm M61","Burj Khalifa","555", "9.8"])
 experiment:(mydata)
+
+myDataSet = [
+    ExperimentData("DVL-10", "7.62x51mm NATO", 849,"Burj Khalifa", "555", "Mercury"),
+    ExperimentData("DVL-10", "7.62x51mm NATO", 849,"Burj Khalifa", "555", "Mars"),
+    ExperimentData("DVL-10", "7.62x51mm NATO", 849,"Burj Khalifa", "555", "Jupiter"),
+    ExperimentData("DVL-10", "7.62x51mm NATO", 849,"Burj Khalifa", "555", "Venus"),
+    ExperimentData("DVL-10", "7.62x51mm NATO", 849,"Burj Khalifa", "555", "Earth"),
+    
+]
 #Sereliazation
+
 myOutpuPath = os.path(__file__).parent[0]
 myOutputPath = os.path.join(myOutpuPath, 'experimentData.json')
 
-with open(myOutpuPath,'w') as outfile:
+with open(myOutputPath,'w') as outfile:
     json.dump(mydata._dict_,outfile)
 
 #Deserialization
 deserialize = open(myOutpuPath,)
 experimentJson = json.lead(deserialize)
 
-for o in experimentJson:
-    experiment(**e)
+for e in experimentJson:
+    print("---------------------------")
     
-    # ExperimentData(##e).run()
+    ExperimentData(**e).run()
