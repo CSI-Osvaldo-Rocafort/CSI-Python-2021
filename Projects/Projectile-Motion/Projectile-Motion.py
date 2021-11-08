@@ -1,7 +1,8 @@
 import math
 import os
 from ExperimentData import ExperimentData
-import json
+import json 
+from pathlib import Path
 
 Gunname = ("DVL-10")
 Cartridgecalibre = ("7.62x51mm NATO")
@@ -55,15 +56,16 @@ myDataSet = [
 ]
 #Sereliazation
 
-myOutpuPath = os.path(__file__).parent[0]
-myOutputPath = os.path.join(myOutpuPath, 'experimentData.json')
+myOutpuPath = Path(__file__).parent[0]
+myOutputFilePath = os.path.join(myOutpuPath, 'Projectile-Motion.json')
 
-with open(myOutputPath,'w') as outfile:
-    json.dump(mydata._dict_,outfile)
+with open(myOutputFilePath,'w') as outfile:
+    json.dump(mydata._dict_ for data in myDataSet ,outfile)
 
 #Deserialization
+
 deserialize = open(myOutpuPath,)
-experimentJson = json.lead(deserialize)
+experimentJson = json.load(deserialize)
 
 for e in experimentJson:
     print("---------------------------")
