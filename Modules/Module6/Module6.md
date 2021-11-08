@@ -17,7 +17,7 @@ JSON is a format that encodes objects into a string.
 <br>
 
 ## [How to define an object](https://www.geeksforgeeks.org/convert-class-object-to-json-in-python/).
-* ### [What is an object constructor](https://www.geeksforgeeks.org/constructors-in-python)
+* ### [What is an object constructor](https://w6ww.geeksforgeeks.org/constructors-in-python)
   * An object constructor is like a function. It's function is included by default in all classes. it is used by writing a function called `__init__`.You define how many parameters it includes. You also define what variables are stored into your object by assigning them to `self`.
 
 ```python
@@ -81,23 +81,30 @@ myObject = ExperimentData(**experimentJson)
 
 What does JSON Stand for?
 
- - Answer:
+ - Answer: Json stand for JavaScript Object Notation
 
 Why are JSON formats important?
 
- - Answer:
+ - Answer: Json formats are important because its stores information in an organized, easy to access manner. The JSON format helps in transmit and serialize all type of structured data.
 
 Create an example of a JSON object with at least 4 values. It may represent anything but it must be original.
 
- - Answer:
+ - Answer: {
+   "soccer players":[
+     {"Name":"Messi", "Position":"Rigth Wing"}
+     {"Name":"Ronaldo", "Position":"Left Wing"}
+     {"Name":"Mbappe", "Position":"Striker"}
+     {"Name":"De Jong", "Position":"Center Midfielder"}
+   ]
+ }
 
 What is the difference between serialization and deserialization?
 
- - Answer:
+ - Answer: Serialization is the process of converting app-level objects to prmitive types, such as dictionary text,string etc. Deserialization is the reverse process of serialization, in which data typically dictionaries or JSON objects are converted back into app-level objects.
 
 Research data persistance. What did you find?
 
- - Answer: 
+ - Answer: What I found of data perssistence is the standard library includes a variety of modules for persisting data. The most common pattern for storing data from Python objects for reuse is to serialize them with pickle and then either write them directly to a file or store them using one of the many key-value pair database formats available with the dbm API.
 
 Type down any class notes below this sentence:
 
