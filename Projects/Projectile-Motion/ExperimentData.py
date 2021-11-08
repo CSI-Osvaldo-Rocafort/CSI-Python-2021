@@ -19,9 +19,9 @@ class ExperimentData:
         planets = ["Earth", "Mercury", "Venus", "Jupiter", "Mars", "Uranus", "Saturn"]
         g_ms2 = [9.81, 3.7, 8.87, 24.79, 10.44, 11.15, 8.69]
         return g_ms2[planets.index(self.planet)]
-    
-    def run(self):
-        print (f"I shot a {Gunname} from {Building} and the {Buildingheight} meters high. It goes at {Roundvelocity} and it takes about{time} seconds to reach {DeltaX}.")
+
+def run(self):
+        print (f"I shot a {self.Gunname} from {self.Building} and the {self.Buildingheight} meters high. It goes at {self.Roundvelocity} and it takes about{self.getTime()} seconds to reach {self.getDistance()}.")
 
 
 
