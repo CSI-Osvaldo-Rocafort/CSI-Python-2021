@@ -90,7 +90,7 @@ Why are JSON formats important?
 Create an example of a JSON object with at least 4 values. It may represent anything but it must be original.
 
  - Answer: {
-   "soccer players":[
+   "Soccer Players":[
      {"Name":"Messi", "Position":"Rigth Wing"}
      {"Name":"Ronaldo", "Position":"Left Wing"}
      {"Name":"Mbappe", "Position":"Striker"}
