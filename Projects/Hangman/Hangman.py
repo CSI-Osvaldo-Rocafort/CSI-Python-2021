@@ -1,7 +1,22 @@
-import random
-word_list = ["San Juan","Bayamon","Guayanilla","Loiza","Isabela","Lajas","Quebradillas","Lares","Trujillo Alto","Orocovis","Gurabo","Toa Alta","Guaynabo","Condado","Caguas","San German","Humacao","Aguas Buenas","Arecibo","Culebra"]
+import ssl
+import urllib,json
+from Colors import Colors
+import urllib.request
 
-random.choice()
+def get_color():
+    # This is discouraged but it will avoid certificate validation (prevents error)
+    ssl._create_default_https_context = ssl._create_unverified_context
+
+    # This is the URL from which we will request the data
+    colorsURL = "https://random-data-api.com/api/color/random_color"
+
+    req = urllib.request.Request(colorsURL)
+    requestData = json.loads(urllib.request.urlopen(req).read())
+
+    color:Colors = Colors(**requestData)
+    
+    return (color.hex_value)
+
 
 steps = ["""
     .-------.
@@ -53,5 +68,9 @@ steps = ["""
     """
      
 ]
+# for step in steps:
+#     print(steps)
+# print(steps[0])
 
-print(steps[0])
+def getInput():
+    
