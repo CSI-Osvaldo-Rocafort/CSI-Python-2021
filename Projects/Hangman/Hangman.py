@@ -1,4 +1,6 @@
+from ast import Break
 import ssl
+from turtle import reset
 import urllib,json
 from Colors import Colors
 import urllib.request
@@ -18,8 +20,9 @@ def get_color():
     
     return (color.color_name)
 
-myColor = get_color()
-print(myColor)
+# myColor = get_color()
+# print(myColor)
+
 
 #Steps to create a hangman.
 steps = ["""
@@ -96,7 +99,6 @@ def getInput():
         return letter
     
 # It's defining print word and using temp
-
 def printword():
     temp:str=""
 # If the letter that I choose is a letter from the word then it adds the letter to form the word and if I put a letter that is not from the word there will be a space.
@@ -107,6 +109,7 @@ def printword():
             temp= temp + "_"
  #printing temp           
     print(temp)
+    return temp
     
     
 #printing steps for the counter of the words that are printing      
@@ -118,11 +121,32 @@ def printSteps():
 #printing steps counter           
     print(steps[counter])
     
-# printing the steos, input and words for the hangman game.       
+    return counter
+    
+# printing the steps, input and words for the hangman game.       
 while True:
-    printSteps()
-    getInput()
-    printword()
+    myColor = get_color().upper()
+    used = []
+ #printing steps
+    while True:
+        counter=printSteps()
+        getInput()
+        temp = printword()
+        
+        usedString = str(used).replace('\'','').replace('[','').replace(']','')
+        print(f"Used Letters: {usedString}")
+          
+        if(temp == myColor):
+            print("GAME WON")
+        #restarting game
+            
+        # printing game over when you lose
+        if(counter>4 ):
+            print ("GAME OVER")
+            break
+    
+
+    
     
     
         
